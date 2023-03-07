@@ -2,8 +2,13 @@ body{
   font-family:Arial, Helvetica, sans-serif
 }
 
-.para,
-.small-para {
+.para 
+{
+  font-size: 22px;
+}
+
+/* grouping selectors*/
+.para, .small-para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
@@ -13,11 +18,10 @@ body{
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
 
-.confirm {
+/* chaining selectors*/
+.confirm.button
+{
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +33,7 @@ body{
   font-size: 20px;
 }
 
-.child {
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
